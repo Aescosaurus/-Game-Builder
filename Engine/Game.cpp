@@ -38,6 +38,7 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	edt.UpdateButtons( wnd.mouse );
 }
 
 void Game::ComposeFrame()

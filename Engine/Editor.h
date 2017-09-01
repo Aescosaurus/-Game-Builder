@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Graphics.h"
+#include "Mouse.h"
 
 #include "RectF.h"
 #include "Button.h"
@@ -8,6 +9,7 @@
 class Editor
 {
 public:
+	void UpdateButtons( Mouse& ms );
 	void Draw( Graphics& gfx ) const;
 private:
 	static constexpr int PADDING = 7;

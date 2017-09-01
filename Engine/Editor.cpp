@@ -1,5 +1,10 @@
 #include "Editor.h"
 
+void Editor::UpdateButtons( Mouse& ms )
+{
+	run.Update( ms );
+}
+
 void Editor::Draw( Graphics& gfx ) const
 {
 	gfx.DrawRectDim( int( sidebar.left ),int( sidebar.top ),int( sidebar.right ),int( sidebar.bot ),Colors::MakeRGB( 200,100,50 ) );
@@ -10,5 +15,5 @@ void Editor::Draw( Graphics& gfx ) const
 
 	run.Draw( gfx );
 	if( run.IsPressed() )
-		int x = 2;
+		int test = 2;
 }

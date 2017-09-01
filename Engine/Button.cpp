@@ -26,7 +26,7 @@ void Button::Update( Mouse & ms )
 
 void Button::Draw( Graphics& gfx ) const
 {
-	gfx.DrawRect( x,y,width,height,Colors::White );
+	gfx.DrawRect( int( x ),int( y ),int( width ),int( height ),Colors::White );
 }
 
 bool Button::IsPressed() const
