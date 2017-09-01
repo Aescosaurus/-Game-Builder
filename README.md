@@ -2,3 +2,4 @@
 ## Make video games with ease!
 ### Currently working on:
 - Main functionality.
+- Editor screen.
