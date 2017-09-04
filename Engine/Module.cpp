@@ -1,5 +1,15 @@
 #include "Module.h"
 
+Module::Module()
+	:
+	type( 0 ),
+	x( 999 ),
+	y( 999 ),
+	xOrig( 999 ),
+	yOrig( 999 )
+{
+}
+
 Module::Module( int type_in,int x_in,int y_in )
 	:
 	type( type_in ),
@@ -45,6 +55,17 @@ void Module::Draw( Graphics& gfx ) const
 	gfx.DrawRect( x,y,width,height,Colors::Red );
 }
 
+void Module::SetType( int type_in )
+{
+	type = type_in;
+}
+
+void Module::SetPos( int x_in,int y_in )
+{
+	x = x_in;
+	y = y_in;
+}
+
 void Module::StartDrag( Mouse& ms )
 {
 	if( !isDragging )
@@ -58,4 +79,9 @@ void Module::StartDrag( Mouse& ms )
 void Module::StopDrag()
 {
 	isDragging = false;
+}
+
+bool Module::IsPressed() const
+{
+	return isDragging;
 }

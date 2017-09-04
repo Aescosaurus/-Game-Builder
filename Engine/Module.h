@@ -6,13 +6,19 @@
 class Module
 {
 public:
+	Module();
 	Module( int type,int x,int y );
 
 	void Update( Mouse& ms );
 	void Draw( Graphics& gfx ) const;
+	
+	void SetType( int type );
+	void SetPos( int x,int y );
 
 	void StartDrag( Mouse& ms );
 	void StopDrag();
+
+	bool IsPressed() const;
 private:
 	int x;
 	int y;

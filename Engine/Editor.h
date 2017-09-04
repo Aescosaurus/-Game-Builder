@@ -21,6 +21,10 @@ private:
 
 	Button run = Button( float( PADDING + PADDING ),float( PADDING + PADDING ),30.0f,30.0f );
 
+	static constexpr int MAX_MODULES = 99;
+	int curMod = 0;
+	Module allMods[99];
 	// Modules!
+
 	Module setVar = Module( 1,Graphics::ScreenWidth - 150 - PADDING + 10,100 );
 };
