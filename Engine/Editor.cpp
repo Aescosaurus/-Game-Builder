@@ -4,7 +4,7 @@ void Editor::UpdateButtons( Mouse& ms )
 {
 	run.Update( ms );
 
-	// setVar.Update( ms );
+	setVar.Update( ms );
 }
 
 void Editor::Draw( Graphics& gfx ) const

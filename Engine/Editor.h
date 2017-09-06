@@ -6,6 +6,7 @@
 #include "RectF.h"
 #include "Button.h"
 #include "Module.h"
+#include "ModuleCreator.h"
 
 class Editor
 {
@@ -26,5 +27,5 @@ private:
 	Module allMods[99];
 	// Modules!
 
-	Module setVar = Module( 1,Graphics::ScreenWidth - 150 - PADDING + 10,100 );
+	ModuleCreator setVar = ModuleCreator( 1,Graphics::ScreenWidth - 150 - PADDING + 10,100 );
 };
