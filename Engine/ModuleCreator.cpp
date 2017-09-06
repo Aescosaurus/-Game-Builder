@@ -11,7 +11,8 @@ ModuleCreator::ModuleCreator( int type_in,int x_in,int y_in )
 void ModuleCreator::Update( Mouse& ms )
 {
 	isPressed = ( ms.GetPosX() > x && ms.GetPosX() < x + width &&
-		ms.GetPosY() > y && ms.GetPosY() < y + height );
+		ms.GetPosY() > y && ms.GetPosY() < y + height &&
+		ms.LeftIsPressed() );
 }
 
 void ModuleCreator::Draw( Graphics& gfx ) const
@@ -22,4 +23,14 @@ void ModuleCreator::Draw( Graphics& gfx ) const
 bool ModuleCreator::IsPressed() const
 {
 	return isPressed;
+}
+
+int ModuleCreator::GetPosX() const
+{
+	return x;
+}
+
+int ModuleCreator::GetPosY() const
+{
+	return y;
 }

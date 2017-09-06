@@ -12,6 +12,9 @@ public:
 	void Draw( Graphics& gfx ) const;
 
 	bool IsPressed() const;
+
+	int GetPosX() const;
+	int GetPosY() const;
 private:
 	const int x;
 	const int y;

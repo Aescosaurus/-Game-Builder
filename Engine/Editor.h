@@ -28,4 +28,6 @@ private:
 	// Modules!
 
 	ModuleCreator setVar = ModuleCreator( 1,Graphics::ScreenWidth - 150 - PADDING + 10,100 );
+
+	bool pressing = false;
 };
